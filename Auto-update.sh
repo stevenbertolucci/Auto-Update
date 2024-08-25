@@ -4,7 +4,7 @@
 PASSWORD_FILE="your_path_to_the_password_file_goes_here.txt"
 
 # Read the password from the file
-PASSWORD=$(cat "PASSWORD_FILE")
+PASSWORD=$(cat "$PASSWORD_FILE")
 
 # Update and upgrade the system
 gnome-terminal -- bash -c "echo $PASSWORD | sudo -S apt update && sudo apt upgrade -y; exec bash"
@@ -51,7 +51,7 @@ handle_input() {
 
 # Menu loop
 while true; do
-    display_menu
+    menu
     read -p "Enter your choice [1-5]: " choice
     handle_input $choice
     echo
