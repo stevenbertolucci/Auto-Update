@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Replace the name of the 'your_path_to_the_password_file_goes_here' text below with the name of the file that contains your password
-PASSWORD_FILE="your_path_to_the_password_file_goes_here.txt"
+PASSWORD_FILE="your_path_to_the_password_file_goes_here.txt.gpg"
 
 # Check if the password file exists
 if [ ! -f "$PASSWORD_FILE" ]; then
@@ -10,8 +10,8 @@ if [ ! -f "$PASSWORD_FILE" ]; then
     exit 1
 fi
 
-# Read the password from the file
-PASSWORD=$(cat "$PASSWORD_FILE")
+# Decrypt the password from the file
+PASSWORD=$(gpg --quiet --batch --decrypt "$PASSWORD_FILE")
 
 # Update and upgrade the system
 gnome-terminal -- bash -c "echo $PASSWORD | sudo -S apt update && sudo apt upgrade -y; exec bash"
