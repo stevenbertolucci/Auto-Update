@@ -12,7 +12,7 @@ chmod +x "$SCRIPT_NAME"
 cat << EOF > "$DESKTOP_FILE"
 [Desktop Entry]
 Version=1.0
-Name=Your Program
+Name=Auto-Update
 Comment=Launch Your Program
 Exec=$(pwd)/$SCRIPT_NAME
 Icon=$(pwd)/$ICON_NAME
@@ -22,5 +22,8 @@ EOF
 
 # Make the .desktop file executable
 chmod +x "$DESKTOP_FILE"
+
+# Set the .desktop file as trusted using gio
+gio set "$DESKTOP_FILE" metadata::trusted true
 
 echo "Setup complete! You can now run Auto-Update from the desktop icon. Enjoy, my friend..."
