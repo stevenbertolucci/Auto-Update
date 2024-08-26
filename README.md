@@ -9,11 +9,11 @@ I created this program because I got so sick of opening Terminal and typing in `
 ### Option 1
 1. Download the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/stevenbertolucci/Auto-Update.git
     ```
 2. Navigate to the repository directory:
     ```bash
-    cd your-repo
+    cd Auto-Update
     ```
 3. Run the setup script:
     ```bash
