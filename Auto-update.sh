@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Replace the name of the 'your_path_to_the_password_file_goes_here' text below with the name of the file that contains your password
+# NOTE - The file extension must end with .txt
 PASSWORD_FILE="your_path_to_the_password_file_goes_here.txt"
 
 # Check if the password file exists
