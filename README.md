@@ -26,4 +26,7 @@ I created this program because I got so sick of opening Terminal and typing in `
 2. Go to the folder that contains the file `Auto-update.sh`
 3. When you see the file when typing `ls`, type in `chmod +x Auto-update.sh`
 4. The file is now executable. Type in `./Auto-update.sh`
-5. Enjoy that magic! 
+5. Enjoy that magic!
+
+### OS Compatibility
+This program only works on Linux systems. Not Unix. Only Linux. 
