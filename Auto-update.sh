@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Replace the name of the 'your_path_to_the_password_file_goes_here' text below with the name of the file that contains your password
+# Replace the name of the 'your_path_to_the_password_file_goes_here' text below with the name of the gpg file that contains your password
+# NOTE - Extension must end with .txt.gpg
 PASSWORD_FILE="your_path_to_the_password_file_goes_here.txt.gpg"
 
 # Check if the password file exists
