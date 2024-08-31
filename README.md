@@ -28,5 +28,5 @@ I created this program because I got so sick of opening Terminal and typing in `
 4. The file is now executable. Type in `./Auto-update.sh`
 5. Enjoy that magic!
 
-### OS Compatibility
+## OS Compatibility
 This program only works on Linux systems. Not Unix. Only Linux. 
